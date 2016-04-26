@@ -1,3 +1,5 @@
+require "rails_helper"
+
 RSpec.feature "Users can create new projects" do
 	before do
 		visit "/"
@@ -8,7 +10,7 @@ RSpec.feature "Users can create new projects" do
 		fill_in "Name", with: "Sublime Text 3"
 		fill_in "Description", with: "A text editor for everyone"
 		click_button "Create Project"
-		
+
 		expect(page).to have_content "Project has been created."
 
 		project = Project.find_by(name: "Sublime Text 3")
@@ -20,7 +22,7 @@ RSpec.feature "Users can create new projects" do
 
 	scenario "when providing invalid attributes" do
 		click_button "Create Project"
-		
+
 		expect(page).to have_content "Project has not been created."
 		expect(page).to have_content "Name can't be blank"
 	end
