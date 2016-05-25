@@ -40,6 +40,9 @@ gem "pundit", "~> 0.3.0"
 # CarrierWave gem
 gem "carrierwave", "~> 0.10.0"
 
+# Searcher gem
+gem "searcher", github: "radar/searcher"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
