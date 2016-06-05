@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby "2.2.3"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
@@ -50,6 +50,10 @@ gem "fog", "~> 1.29.0"
 # Rails 12 Factor gem
 gem "rails_12factor", group: :production
 
+# Puma gem
+gem "puma", group: :production
+
+# net-ssh gem
 gem 'net-ssh', '!= 2.10.0'
 
 # Use ActiveModel has_secure_password
