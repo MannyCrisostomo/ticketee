@@ -216,6 +216,7 @@ GEM
     mini_portile2 (2.0.0)
     minitest (5.9.0)
     multi_json (1.12.1)
+    net-ssh (3.1.1)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     orm_adapter (0.5.0)
@@ -338,6 +339,7 @@ DEPENDENCIES
   font-awesome-rails (~> 4.3)
   jbuilder (~> 2.0)
   jquery-rails
+  net-ssh (!= 2.10.0)
   pg
   pundit (~> 0.3.0)
   rails (= 4.2.6)
